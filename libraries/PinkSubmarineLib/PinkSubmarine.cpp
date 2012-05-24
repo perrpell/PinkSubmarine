@@ -4,7 +4,7 @@ const int outputPins [] = {0,1,2,3,4,5};
 
 void initializeROV() {
   for (int i = 0; i < 6; i++) {
-    pinMode(outputPins[i-1], OUTPUT);
+    pinMode(outputPins[i], OUTPUT);
   }
 }
 
