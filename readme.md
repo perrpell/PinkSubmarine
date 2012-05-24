@@ -16,18 +16,18 @@ The diagram below roughly outlines how this will work.  Each number represents a
 on the Arduino board.  The slashed indicate what direction the pump will pump.
 
      ____________________
-    |                    |
-    |   /           \    |
-    || /  0       1  \ | |
-    ||__             __| |
-    |                    |
-    |                    |
-    |       4 - 5        |
-    |                    |
-    | __             __  |
-    ||\               /| |
-    || \  2        3 / | |
-    |____________________|
+    |                     |
+    |    /           \    |
+    | | /  0       1  \ | |
+    | |__             __| |
+    |                     |
+    |                     |
+    |        4 - 5        |
+    |                     |
+    |  __             __  |
+    | |\               /| |
+    | | \  2        3 / | |
+    |_____________________|
 
 ## Thrust Vectors
 
@@ -47,12 +47,12 @@ The Arduino IDE installer creates a directory in your user's home document direc
 
 Clone this repository there so you end up with the following directory structure.
 
-<user_home>/Documents/Arduino/readme.md
-<user_home>/Documents/Arduino/pink_submarine
-<user_home>/Documents/Arduino/pink_submarine/pink_submarine.ino
-<user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.h
-<user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.c
+    <user_home>/Documents/Arduino/readme.md
+    <user_home>/Documents/Arduino/pink_submarine
+    <user_home>/Documents/Arduino/pink_submarine/pink_submarine.ino
+    <user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.h
+    <user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.c
 
-Launch your Arduino IDE, load the file named pink_submarine
+Launch your Arduino IDE, load the file named pink_submarine, install and run on your Arduino Uno Rev 3.
     
     
