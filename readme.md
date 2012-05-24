@@ -15,20 +15,21 @@ The ROV will be constructed with PVC pipe in a more or less cube shape.  It will
 The diagram below roughly outlines how this will work.  Each number represents a bilge pump connected to an output pin
 on the Arduino board.  The slashed indicate what direction the pump will pump.
 
-     _________________
-    |                 |
-    | /0           1\ |
-    |                 |
-    |                 |
-    |                 |
-    |      4 - 5      |
-    |                 |
-    |                 |
-    |                 |
-    | \2           3/ |
-    |_________________|
+     ____________________
+    |                    |
+    |   /           \    |
+    || /  0       1  \ | |
+    ||__             __| |
+    |                    |
+    |                    |
+    |       4 - 5        |
+    |                    |
+    | __             __  |
+    ||\               /| |
+    || \  2        3 / | |
+    |____________________|
 
-## Thrust Vector
+## Thrust Vectors
 
 Given the arrangement of the bilge pumps the directional control is as follows.
 
