@@ -43,5 +43,16 @@ Given the arrangement of the bilge pumps the directional control is as follows.
 
 ## Arduino Project
 
-Coming soon.  
+The Arduino IDE installer creates a directory in your user's home document directory name "Arduino".
+
+Clone this repository there so you end up with the following directory structure.
+
+<user_home>/Documents/Arduino/readme.md
+<user_home>/Documents/Arduino/pink_submarine
+<user_home>/Documents/Arduino/pink_submarine/pink_submarine.ino
+<user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.h
+<user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.c
+
+Launch your Arduino IDE, load the file named pink_submarine
+    
     
