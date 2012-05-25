@@ -1,38 +1,42 @@
+#include <Wire.h>
+
 #include <PinkSubmarine.h>
 
+PinkSubmarine pinkSubmarine = PinkSubmarine();
+
 void setup() {
-  initializeROV();  
+  pinkSubmarine.initializeROV();  
 }
 
 void loop() {
-  forward();
+  pinkSubmarine.forward();
   delay(1000);
-  stopROV();
+  pinkSubmarine.stopROV();
   delay(1000);  
   
-  reverse();
+  pinkSubmarine.reverse();
   delay(1000);
-  stopROV();
+  pinkSubmarine.stopROV();
   delay(1000);
    
-  rotateLeft();
+  pinkSubmarine.rotateLeft();
   delay(1000);
-  stopROV();
-  delay(1000);
-  
-  rotateRight();
-  delay(1000);
-  stopROV();
+  pinkSubmarine.stopROV();
   delay(1000);
   
-  up();
+  pinkSubmarine.rotateRight();
   delay(1000);
-  stopROV();
+  pinkSubmarine.stopROV();
   delay(1000);
   
-  down();
+  pinkSubmarine.up();
   delay(1000);
-  stopROV();
+  pinkSubmarine.stopROV();
+  delay(1000);
+  
+  pinkSubmarine.down();
+  delay(1000);
+  pinkSubmarine.stopROV();
   delay(1000);
 }
 

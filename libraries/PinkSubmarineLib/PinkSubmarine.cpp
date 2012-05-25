@@ -2,42 +2,42 @@
 
 const int outputPins [] = {0,1,2,3,4,5};
 
-void initializeROV() {
+void PinkSubmarine::initializeROV() {
   for (int i = 0; i < 6; i++) {
     pinMode(outputPins[i], OUTPUT);
   }
 }
 
-void stopROV() {
+void PinkSubmarine::stopROV() {
   for (int i = 0; i < 6; i++) {
     digitalWrite(outputPins[i], LOW);
   }
 }
 
-void rotateRight() {
+void PinkSubmarine::rotateRight() {
   digitalWrite(0, HIGH);
   digitalWrite(3, HIGH);
 }
 
-void rotateLeft() {
+void PinkSubmarine::rotateLeft() {
   digitalWrite(1, HIGH);
   digitalWrite(2, HIGH);
 }
 
-void up() {
+void PinkSubmarine::up() {
   digitalWrite(4, HIGH);
 }
 
-void down() {
+void PinkSubmarine::down() {
   digitalWrite(5, HIGH);
 }
   
-void reverse() {
+void PinkSubmarine::reverse() {
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
 }
 
-void forward() {
+void PinkSubmarine::forward() {
   digitalWrite(0, HIGH);
   digitalWrite(1, HIGH);
 }
