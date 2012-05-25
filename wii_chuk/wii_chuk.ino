@@ -22,11 +22,11 @@ void setup() {
 
 
 void loop() {
-     delay(20);
+     delay(1000);
      chuck.update(); 
 
 
-     Serial.print(chuck.readRoll());
+/*     Serial.print(chuck.readRoll());
      Serial.print(", ");  
      Serial.print(chuck.readPitch());
      Serial.print(", ");  
@@ -36,7 +36,17 @@ void loop() {
      Serial.print((int)chuck.readAccelY()); 
      Serial.print(", ");  
 
-     Serial.print((int)chuck.readAccelZ()); 
+     Serial.print((char)chuck.readAccelZ()); 
+*/
+     Serial.print(chuck.readJoyX());
+     Serial.print(", ");
+     Serial.print(chuck.readJoyY());
+     
+     Serial.println();
+     
+     Serial.print(chuck.zPressed() ? "z pressed" : "z not pressed");
+     Serial.print(", ");
+     Serial.print(chuck.cPressed() ? "c pressed" : "c not pressed");
 
      Serial.println();
 }

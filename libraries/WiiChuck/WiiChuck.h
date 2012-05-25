@@ -47,8 +47,8 @@
 #define ZEROZ 460
 #define RADIUS 210  // probably pretty universal
 
-#define DEFAULT_ZERO_JOY_X 124
-#define DEFAULT_ZERO_JOY_Y 132
+#define DEFAULT_ZERO_JOY_X 125
+#define DEFAULT_ZERO_JOY_Y 127
 
 
 
@@ -118,7 +118,7 @@ class WiiChuck {
     Wire.requestFrom (0x52, 6);// request data from nunchuck
     while (Wire.available ()) {
       // receive byte as an integer
-      status[cnt] = _nunchuk_decode_byte (Wire.read()); //
+      status[cnt] = _nunchuk_decode_byte (Wire.read()); 
       cnt++;
     }
     if (cnt > 5) {
