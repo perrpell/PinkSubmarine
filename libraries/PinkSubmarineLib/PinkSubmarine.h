@@ -14,6 +14,8 @@ class PinkSubmarine {
   void reverse(); 
   void forward();
   void stopROV();
+
+  void receiveWiiChuckXY(int x, int y);
 };
 
 #endif
