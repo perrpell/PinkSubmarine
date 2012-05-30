@@ -17,29 +17,35 @@ void PinkSubmarine::stopROV() {
 }
 
 void PinkSubmarine::rotateRight() {
+  this->stopROV();
   digitalWrite(2, HIGH);
   digitalWrite(5, HIGH);
 }
 
 void PinkSubmarine::rotateLeft() {
+  this->stopROV();
   digitalWrite(3, HIGH);
   digitalWrite(4, HIGH);
 }
 
 void PinkSubmarine::up() {
+  this->stopROV();
   digitalWrite(6, HIGH);
 }
 
 void PinkSubmarine::down() {
+  this->stopROV();
   digitalWrite(7, HIGH);
 }
   
 void PinkSubmarine::reverse() {
+  this->stopROV();
   digitalWrite(4, HIGH);
   digitalWrite(5, HIGH);
 }
 
 void PinkSubmarine::forward() {
+  this->stopROV();  
   digitalWrite(2, HIGH);
   digitalWrite(3, HIGH);
 }
