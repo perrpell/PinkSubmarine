@@ -75,6 +75,12 @@ class WiiChuck {
   uint8_t joyY;
   bool buttonZ;
   bool buttonC;
+
+  WiiChuck() {
+    lastZ = false;
+    lastC = false;
+  }
+
   void begin() 
   {
     Wire.begin();
