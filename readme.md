@@ -18,25 +18,25 @@ on the Arduino board.  The slashed indicate what direction the pump will pump.
      ____________________
     |                     |
     |    /           \    |
-    | | /  0       1  \ | |
+    | | /  2       3  \ | |
     | |__             __| |
     |                     |
     |                     |
-    |        4 - 5        |
+    |        6 - 7        |
     |                     |
     |  __             __  |
     | |\               /| |
-    | | \  2        3 / | |
+    | | \  4        5 / | |
     |_____________________|
 
 ## Thrust Vectors
 
 Given the arrangement of the bilge pumps the directional control is as follows.
 
-* forward - pumps 0 and 1 on
-* reverse - pumps 2 and 3 on
-* rotate right - pumps 0 and 3 on
-* rotate left - pumps 1 and 2 on
+* forward - pumps 2 and 3 on
+* reverse - pumps 4 and 5 on
+* rotate right - pumps 2 and 5 on
+* rotate left - pumps 3 and 4 on
 * up - pump 4 on
 * down - pump 5 on
 * stop - all pumps off

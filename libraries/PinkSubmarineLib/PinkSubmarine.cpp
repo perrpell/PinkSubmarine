@@ -14,6 +14,10 @@ void PinkSubmarine::initializeROV()
     Serial.print("pin OUTPUT: ");
     Serial.println(outputPins[i]);
   }
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+
+  digitalWrite(8, HIGH);
 }
 
 void PinkSubmarine::changeDriveMode()
@@ -22,6 +26,16 @@ void PinkSubmarine::changeDriveMode()
   horizontalDriveMode = !horizontalDriveMode;
   Serial.print("Change horiontalDriveMode to: ");
   Serial.println(horizontalDriveMode ? "horizontal" : "vertical");
+
+
+  if (horizontalDriveMode) {
+    digitalWrite(9, LOW);
+    digitalWrite(8, HIGH);
+  } else {
+    digitalWrite(8, LOW);
+    digitalWrite(9, HIGH);
+  }
+  
 }
 
 void PinkSubmarine::stopROV()
@@ -36,7 +50,7 @@ void PinkSubmarine::rotateRight()
   if (horizontalDriveMode) {
     this->stopROV();
     digitalWrite(2, HIGH);
-    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
   }
 }
 
@@ -45,7 +59,7 @@ void PinkSubmarine::rotateLeft() {
 
   if (horizontalDriveMode) {
     digitalWrite(3, HIGH);
-    digitalWrite(5, HIGH);
+    digitalWrite(4, HIGH);
   }
 }
 
