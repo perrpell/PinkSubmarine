@@ -9,14 +9,22 @@ PinkSubmarine pinkSubmarine = PinkSubmarine();
 
 void setup() {
   Serial.begin(SERIAL_BAUD_RATE);
+
   chuck.begin();
   chuck.update();
+
   pinkSubmarine.initializeROV();  
 }
 
 void loop() {
-  delay(500);
+  delay(250);
+  
   chuck.update();
+  
+  if (chuck.zPressed()) {
+    pinkSubmarine.changeDriveMode();
+  }
+  
   pinkSubmarine.receiveWiiChuckXY(chuck.readJoyX(), chuck.readJoyY());
 }
 

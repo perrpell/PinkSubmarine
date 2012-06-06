@@ -51,7 +51,9 @@ Clone this repository there so you end up with the following directory structure
     <user_home>/Documents/Arduino/pink_submarine
     <user_home>/Documents/Arduino/pink_submarine/pink_submarine.ino
     <user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.h
-    <user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.c
+    <user_home>/Documents/Arduino/libraries/PinkSubmarineLib/PinkSubmarine.cpp
+    <user_home>/Documents/Arduino/libraries/WiiChuck/WiiChuck.h
+    <user_home>/Documents/Arduino/libraries/WiiChuck/WiiChuck.cpp
 
 Launch your Arduino IDE, load the file named pink_submarine, install and run on your Arduino Uno Rev 3.
     
