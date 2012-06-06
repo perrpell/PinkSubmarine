@@ -2,6 +2,7 @@
 #include <Wire.h>
 #include <PinkSubmarine.h>
 
+
 #define SERIAL_BAUD_RATE 115200
 
 WiiChuck chuck = WiiChuck();
